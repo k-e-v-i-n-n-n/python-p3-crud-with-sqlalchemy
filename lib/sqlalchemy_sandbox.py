@@ -8,6 +8,8 @@ Base = declarative_base()
 class Student(Base):
     __tablename__ = 'students'
 
+    Index('index_name', 'name')
+
     id = Column(Integer(), primary_key=True)
     name = Column(String())
 
