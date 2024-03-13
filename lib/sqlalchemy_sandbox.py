@@ -18,7 +18,7 @@ if __name__ == '__main__':
     def __repr__(self):
         return f"Student {self.id}: " \
             + f"{self.name}, " \
-            + f"Grade {self.grade}"
+            + f"Grade {self.grade}" 
 
     # use our engine to configure a 'Session' class
     Session = sessionmaker(bind=engine)
